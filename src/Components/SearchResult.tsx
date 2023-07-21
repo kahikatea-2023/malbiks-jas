@@ -6,7 +6,9 @@ interface Props {
 
 function NavText(props: Props) {
   return (
-    <p>{props.text}</p>
+    <div class='flex pr-2 pb-1'>      
+      <p class='self-end font-bold text-2xl text-white'>{props.text}</p>
+    </div>
   )
 }
 
