@@ -1,8 +1,9 @@
 import * as elements from 'typed-html'
 import SideBar from './SideBar'
 import NewReleases from './NewReleases'
+import { Album } from '../db/schema'
 
-function MainContent() {
+function MainContent({ albums }: { albums: Album[] }) {
   return (
     <div class="bg-white ml-2 mb-2 flex flex-col gap-2 w-full border-2 border-gray-400 rounded-md p-2">
       <div class="p-2 bg-malbik-gray border-2 border-gray-400 rounded-md">
@@ -25,7 +26,8 @@ function MainContent() {
           alt=""
         />
       </div>
-      <NewReleases />
+
+      <NewReleases albums={albums} />
     </div>
   )
 }
