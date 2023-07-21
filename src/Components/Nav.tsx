@@ -11,21 +11,22 @@ function Nav() {
     "Contact Us",
   ]
   const endNavItems = [
-
+    "My Account",
+    "Cart",
+    "Checkout"
   ]
   return (
-    <header class=" ">
-      <ul class='inline-flex w-full justify-start gap-4 px-4 bg-white'>
-        {navItems.map(item => <li class='bg-white font-xl font-bold text-malbik-red'>{item}</li>)}
+    <div class="flex justify-between bg-white">
+      <ul class='inline-flex '>
+        {navItems.map(item => <li class='px-5 py-2 font-xl font-bold text-malbik-red hover:bg-red-100 hover:text-black'>{item}</li>)}
       </ul>
-      <ul>
-        <li>My Account</li>
-        <li></li>
-        <li></li>
-      </ul>
-
-      
-    </header>
+      <div class='flex'>        
+        <ul class='inline-flex'>
+          {endNavItems.map(item => <li class='bg-white px-5 my-auto hover:text-malbik-red'>{item}</li>)}
+        </ul>
+        <SearchBar/>
+      </div>    
+    </div>
   )
 }
 
