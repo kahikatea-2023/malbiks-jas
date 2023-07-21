@@ -1,6 +1,6 @@
 import { db } from './index'
 import { albums } from './schema'
-import data from "./data"
+import {data} from "./data"
 
 async function seed() {
   await db.insert(albums).values(data).returning().get()

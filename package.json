@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "db:push": "bunx drizzle-kit push:sqlite",
+    "db:seed": "bun run src/db/seed.ts",
     "db:studio": "bunx drizzle-kit studio",
     "dev": "concurrently \"bun run --watch src/index.tsx\" \"bun run tw:dev\"",
     "tw": "bunx tailwindcss -i ./src/styles.css -o ./tailwind-gen/styles.css",
