@@ -4,11 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-      'malbik-red': '#ef4136',
-      'malbik-gray': '#e7e1e4',
+        'malbik-red': '#ef4136',
+        'malbik-gray': '#e7e1e4',
+      },
     },
-    },
-    
   },
   plugins: [],
 }
