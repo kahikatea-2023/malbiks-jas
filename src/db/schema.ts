@@ -11,7 +11,7 @@ export const albums = sqliteTable('albums', {
   releaseDate: text('release_date').notNull(),
   price: integer('price').notNull(),
   description: text('description').notNull(),
-  availability: text('availability'),
+  availability: text('availability').notNull(),
 })
 
 export type Album = InferModel<typeof albums>
