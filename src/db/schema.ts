@@ -1,10 +1,16 @@
-import { InferModel } from "drizzle-orm";
-import { integer, sqliteTable, text } from "drizzle-orm/sqlite-core";
+import { InferModel } from 'drizzle-orm'
+import { integer, real, sqliteTable, text } from 'drizzle-orm/sqlite-core'
 
-export const todos = sqliteTable("todos", {
-  id: integer("id", { mode: "number" }).primaryKey({ autoIncrement: true }),
-  content: text("content").notNull(),
-  completed: integer("completed", { mode: "boolean" }).notNull().default(false),
-});
+export const albums = sqliteTable('albums', {
+  id: integer('id', { mode: 'number' }).primaryKey({ autoIncrement: true }),
+  title: text('title').notNull(),
+  artist: text('artist').notNull(),
+  releaseDate: text('release_date').notNull(),
+  price: real('price').notNull(),
+  format: text('format').notNull(),
+  availability: text('availability'),
+  img: text('img').notNull(),
+  description: text('description').notNull(),
+})
 
-export type Todo = InferModel<typeof todos>;
+export type Album = InferModel<typeof albums>
