@@ -1,5 +1,6 @@
 import * as elements from 'typed-html'
 import SideBar from './SideBar'
+import NewReleases from './NewReleases'
 
 function MainContent() {
   return (
@@ -24,11 +25,7 @@ function MainContent() {
           alt=""
         />
       </div>
-      <div class="p-2 bg-malbik-gray border-2 border-gray-400 rounded-md">
-        <h1 class="text-malbik-red font-bold text-xl">
-          Outstanding New Releases
-        </h1>
-      </div>
+      <NewReleases />
     </div>
   )
 }
