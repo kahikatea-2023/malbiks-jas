@@ -2,7 +2,7 @@ import { Elysia, t } from 'elysia'
 import { html } from '@elysiajs/html'
 import * as elements from 'typed-html'
 import { db } from './db'
-import { Todo, todos } from './db/schema'
+import { Todo, albums } from './db/schema'
 import { eq } from 'drizzle-orm'
 import Header from './Components/Header'
 import Nav from './Components/Nav'
@@ -11,18 +11,19 @@ import Content from './Components/Content'
 
 const app = new Elysia()
   .use(html())
-  .get('/', ({ html }) =>
-    html(
+  .get('/', async ({ html }) => {
+    const data = await db.select().from(albums).all()
+    return html(
       <BaseHtml>
         <div>
           <body class="bg-malbik-gray">
-            <Header /> 
-            <Content/>            
+            <Header />
+            <Content albums={data} />
           </body>
         </div>
       </BaseHtml>
     )
-  )
+  })
   // .get('/todos', async () => {
   //   const data = await db.select().from(todos).all()
   //   return <div class="flex  w-full "></div>
