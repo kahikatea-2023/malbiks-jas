@@ -28,7 +28,7 @@ function Sidebar() {
         <li>About Us</li>
         <li>Privacy</li>
       </ul>
-      
+      {/* TODO: add filter box conditional? */}
     </div>
   )
 }
