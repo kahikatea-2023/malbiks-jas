@@ -13,10 +13,8 @@ const app = new Elysia()
     html(
       <BaseHtml>
         <div>
-          <body class="flex w-screen h-screen justify-center items-center bg-malbik-gray">
-            <Header />
-            <Nav />
-            
+          <body class="bg-malbik-gray">
+            <Header /> 
           </body>
         </div>
       </BaseHtml>
