@@ -7,7 +7,7 @@ export const data = [
     img: 'http://dummyimage.com/190x100.png/dddddd/000000',
     producer: 'Mills, Pouros and Gutkowski',
     format: 'DVD',
-    release_date: '10/07/1957',
+    releaseDate: '10/07/1957',
     price: 151,
     description:
       'maecenas tristique est et tempus semper est quam pharetra magna ac consequat',
@@ -19,7 +19,7 @@ export const data = [
     img: 'http://dummyimage.com/200x100.png/ff4444/ffffff',
     producer: 'Lebsack-Rohan',
     format: 'CD',
-    release_date: '16/04/2015',
+    releaseDate: '16/04/2015',
     price: 43,
     description:
       'sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at',
@@ -31,7 +31,7 @@ export const data = [
     img: 'http://dummyimage.com/159x100.png/5fa2dd/ffffff',
     producer: 'Heathcote, Hodkiewicz and Kutch',
     format: '2LP',
-    release_date: '27/11/1949',
+    releaseDate: '27/11/1949',
     price: 105,
     description:
       'at nunc commodo placerat praesent blandit nam nulla integer pede',
@@ -43,7 +43,7 @@ export const data = [
     img: 'http://dummyimage.com/135x100.png/5fa2dd/ffffff',
     producer: 'Collier, Bednar and Abernathy',
     format: 'DVD',
-    release_date: '29/10/2004',
+    releaseDate: '29/10/2004',
     price: 77,
     description:
       'magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis',
@@ -55,7 +55,7 @@ export const data = [
     img: 'http://dummyimage.com/165x100.png/ff4444/ffffff',
     producer: 'Cummings-Rosenbaum',
     format: 'DVD',
-    release_date: '28/12/1993',
+    releaseDate: '28/12/1993',
     price: 137,
     description:
       'eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut',
@@ -67,7 +67,7 @@ export const data = [
     img: 'http://dummyimage.com/201x100.png/cc0000/ffffff',
     producer: 'Mills, Halvorson and Orn',
     format: 'DVD',
-    release_date: '01/05/2000',
+    releaseDate: '01/05/2000',
     price: 194,
     description:
       'dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst aliquam augue',
@@ -80,7 +80,7 @@ export const data = [
     img: 'http://dummyimage.com/176x100.png/ff4444/ffffff',
     producer: 'Monahan, Corkery and Howe',
     format: 'CD',
-    release_date: '01/07/1990',
+    releaseDate: '01/07/1990',
     price: 182,
     description:
       'erat tortor sollicitudin mi sit amet lobortis sapien sapien non',
@@ -92,7 +92,7 @@ export const data = [
     img: 'http://dummyimage.com/222x100.png/5fa2dd/ffffff',
     producer: 'Mayer-Barrows',
     format: 'LP',
-    release_date: '12/07/1949',
+    releaseDate: '12/07/1949',
     price: 174,
     description:
       'venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam',
@@ -104,7 +104,7 @@ export const data = [
     img: 'http://dummyimage.com/142x100.png/dddddd/000000',
     producer: 'Schultz LLC',
     format: 'LP',
-    release_date: '17/05/1968',
+    releaseDate: '17/05/1968',
     price: 64,
     description:
       'diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in congue etiam justo',
@@ -116,7 +116,7 @@ export const data = [
     img: 'http://dummyimage.com/213x100.png/ff4444/ffffff',
     producer: "O'Reilly-Moore",
     format: 'CD',
-    release_date: '21/11/1943',
+    releaseDate: '21/11/1943',
     price: 112,
     description:
       'duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante',
@@ -128,7 +128,7 @@ export const data = [
     img: 'http://dummyimage.com/127x100.png/dddddd/000000',
     producer: 'Witting-Conn',
     format: '2LP',
-    release_date: '08/01/2011',
+    releaseDate: '08/01/2011',
     price: 131,
     description:
       'lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in',
@@ -140,7 +140,7 @@ export const data = [
     img: 'http://dummyimage.com/238x100.png/ff4444/ffffff',
     producer: 'Macejkovic Group',
     format: 'CD',
-    release_date: '01/06/2015',
+    releaseDate: '01/06/2015',
     price: 48,
     description: 'non quam nec dui luctus rutrum nulla tellus in sagittis',
     availability: 'Low Stock',
@@ -151,7 +151,7 @@ export const data = [
     img: 'http://dummyimage.com/224x100.png/5fa2dd/ffffff',
     producer: 'Price, Daniel and Goodwin',
     format: 'DVD',
-    release_date: '17/11/1954',
+    releaseDate: '17/11/1954',
     price: 162,
     description:
       'justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate',
@@ -163,7 +163,7 @@ export const data = [
     img: 'http://dummyimage.com/140x100.png/cc0000/ffffff',
     producer: 'Zboncak LLC',
     format: 'LP',
-    release_date: '28/07/2019',
+    releaseDate: '28/07/2019',
     price: 118,
     description:
       'sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque',
@@ -175,7 +175,7 @@ export const data = [
     img: 'http://dummyimage.com/243x100.png/cc0000/ffffff',
     producer: 'Wilderman-Nader',
     format: '2LP',
-    release_date: '01/05/1947',
+    releaseDate: '01/05/1947',
     price: 176,
     description:
       'nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum',
@@ -187,7 +187,7 @@ export const data = [
     img: 'http://dummyimage.com/201x100.png/5fa2dd/ffffff',
     producer: 'Gleason LLC',
     format: 'LP',
-    release_date: '03/10/1989',
+    releaseDate: '03/10/1989',
     price: 181,
     description:
       'ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum',
@@ -199,7 +199,7 @@ export const data = [
     img: 'http://dummyimage.com/175x100.png/dddddd/000000',
     producer: 'Jacobi, Altenwerth and Lind',
     format: 'CD',
-    release_date: '13/07/1996',
+    releaseDate: '13/07/1996',
     price: 81,
     description:
       'morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis',
@@ -211,7 +211,7 @@ export const data = [
     img: 'http://dummyimage.com/197x100.png/cc0000/ffffff',
     producer: 'Thompson LLC',
     format: '2LP',
-    release_date: '28/04/1967',
+    releaseDate: '28/04/1967',
     price: 161,
     description:
       'sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer',
@@ -223,7 +223,7 @@ export const data = [
     img: 'http://dummyimage.com/216x100.png/cc0000/ffffff',
     producer: 'Erdman Inc',
     format: 'LP',
-    release_date: '17/10/1962',
+    releaseDate: '17/10/1962',
     price: 138,
     description:
       'mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede',
@@ -235,7 +235,7 @@ export const data = [
     img: 'http://dummyimage.com/155x100.png/ff4444/ffffff',
     producer: 'Rath, Hansen and Wunsch',
     format: '2LP',
-    release_date: '08/07/1948',
+    releaseDate: '08/07/1948',
     price: 99,
     description:
       'leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer',
@@ -247,7 +247,7 @@ export const data = [
     img: 'http://dummyimage.com/222x100.png/5fa2dd/ffffff',
     producer: 'Kub Inc',
     format: 'LP',
-    release_date: '27/04/1959',
+    releaseDate: '27/04/1959',
     price: 161,
     description:
       'magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae',
@@ -259,7 +259,7 @@ export const data = [
     img: 'http://dummyimage.com/152x100.png/cc0000/ffffff',
     producer: 'Wolff, Satterfield and West',
     format: 'LP',
-    release_date: '25/06/1989',
+    releaseDate: '25/06/1989',
     price: 59,
     description:
       'in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at',
@@ -271,7 +271,7 @@ export const data = [
     img: 'http://dummyimage.com/193x100.png/ff4444/ffffff',
     producer: 'Zemlak, Christiansen and Ullrich',
     format: '2LP',
-    release_date: '21/06/1969',
+    releaseDate: '21/06/1969',
     price: 51,
     description:
       'mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue',
@@ -283,7 +283,7 @@ export const data = [
     img: 'http://dummyimage.com/169x100.png/5fa2dd/ffffff',
     producer: 'Bode Inc',
     format: 'LP',
-    release_date: '13/08/2007',
+    releaseDate: '13/08/2007',
     price: 128,
     description:
       'elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros',
@@ -295,7 +295,7 @@ export const data = [
     img: 'http://dummyimage.com/113x100.png/dddddd/000000',
     producer: 'Lebsack-Cremin',
     format: 'DVD',
-    release_date: '07/06/1993',
+    releaseDate: '07/06/1993',
     price: 90,
     description:
       'arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis orci',
@@ -307,7 +307,7 @@ export const data = [
     img: 'http://dummyimage.com/219x100.png/cc0000/ffffff',
     producer: 'Grant LLC',
     format: 'DVD',
-    release_date: '12/01/1947',
+    releaseDate: '12/01/1947',
     price: 95,
     description:
       'aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor',
@@ -319,7 +319,7 @@ export const data = [
     img: 'http://dummyimage.com/224x100.png/5fa2dd/ffffff',
     producer: 'Kihn-Stehr',
     format: 'CD',
-    release_date: '30/05/1990',
+    releaseDate: '30/05/1990',
     price: 148,
     description:
       'pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc',
@@ -331,7 +331,7 @@ export const data = [
     img: 'http://dummyimage.com/177x100.png/dddddd/000000',
     producer: 'Stamm-Trantow',
     format: 'CD',
-    release_date: '11/11/2002',
+    releaseDate: '11/11/2002',
     price: 147,
     description:
       'ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet',
@@ -343,7 +343,7 @@ export const data = [
     img: 'http://dummyimage.com/169x100.png/5fa2dd/ffffff',
     producer: 'Zboncak, Collins and Jacobi',
     format: 'LP',
-    release_date: '31/05/1978',
+    releaseDate: '31/05/1978',
     price: 107,
     description:
       'tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla',
@@ -355,7 +355,7 @@ export const data = [
     img: 'http://dummyimage.com/240x100.png/cc0000/ffffff',
     producer: 'Shanahan Inc',
     format: 'CD',
-    release_date: '23/01/2006',
+    releaseDate: '23/01/2006',
     price: 92,
     description:
       'faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet',
@@ -367,7 +367,7 @@ export const data = [
     img: 'http://dummyimage.com/172x100.png/dddddd/000000',
     producer: 'Schiller-Kris',
     format: 'CD',
-    release_date: '09/02/1999',
+    releaseDate: '09/02/1999',
     price: 159,
     description:
       'massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat',
@@ -379,7 +379,7 @@ export const data = [
     img: 'http://dummyimage.com/171x100.png/ff4444/ffffff',
     producer: 'Effertz Inc',
     format: '2LP',
-    release_date: '25/09/1967',
+    releaseDate: '25/09/1967',
     price: 152,
     description:
       'velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit',
@@ -391,7 +391,7 @@ export const data = [
     img: 'http://dummyimage.com/199x100.png/5fa2dd/ffffff',
     producer: 'Dietrich-Champlin',
     format: '2LP',
-    release_date: '02/09/2006',
+    releaseDate: '02/09/2006',
     price: 76,
     description:
       'nisi at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum praesent',
@@ -403,7 +403,7 @@ export const data = [
     img: 'http://dummyimage.com/136x100.png/5fa2dd/ffffff',
     producer: 'Wilderman Inc',
     format: 'CD',
-    release_date: '12/01/1967',
+    releaseDate: '12/01/1967',
     price: 121,
     description:
       'quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue',
@@ -415,7 +415,7 @@ export const data = [
     img: 'http://dummyimage.com/224x100.png/ff4444/ffffff',
     producer: 'Waters, Parisian and Beer',
     format: 'DVD',
-    release_date: '31/10/1954',
+    releaseDate: '31/10/1954',
     price: 144,
     description:
       'ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices',
@@ -427,7 +427,7 @@ export const data = [
     img: 'http://dummyimage.com/162x100.png/5fa2dd/ffffff',
     producer: 'Greenfelder-Gutkowski',
     format: '2LP',
-    release_date: '04/11/1944',
+    releaseDate: '04/11/1944',
     price: 64,
     description:
       'sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit',
@@ -439,7 +439,7 @@ export const data = [
     img: 'http://dummyimage.com/111x100.png/dddddd/000000',
     producer: 'Lockman-Stokes',
     format: 'CD',
-    release_date: '14/09/1947',
+    releaseDate: '14/09/1947',
     price: 179,
     description:
       'nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et',
@@ -451,7 +451,7 @@ export const data = [
     img: 'http://dummyimage.com/220x100.png/ff4444/ffffff',
     producer: 'Kris, Kerluke and Wisozk',
     format: 'CD',
-    release_date: '11/09/1979',
+    releaseDate: '11/09/1979',
     price: 181,
     description:
       'lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue',
@@ -463,7 +463,7 @@ export const data = [
     img: 'http://dummyimage.com/212x100.png/ff4444/ffffff',
     producer: 'Treutel-Conn',
     format: 'CD',
-    release_date: '08/05/1966',
+    releaseDate: '08/05/1966',
     price: 76,
     description:
       'amet justo morbi ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices',
@@ -475,7 +475,7 @@ export const data = [
     img: 'http://dummyimage.com/146x100.png/dddddd/000000',
     producer: 'Nader-McClure',
     format: 'DVD',
-    release_date: '20/01/1944',
+    releaseDate: '20/01/1944',
     price: 190,
     description:
       'potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur',
@@ -487,7 +487,7 @@ export const data = [
     img: 'http://dummyimage.com/222x100.png/cc0000/ffffff',
     producer: 'Fisher-Klocko',
     format: '2LP',
-    release_date: '17/04/2007',
+    releaseDate: '17/04/2007',
     price: 68,
     description:
       'vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna',
@@ -499,7 +499,7 @@ export const data = [
     img: 'http://dummyimage.com/199x100.png/5fa2dd/ffffff',
     producer: 'Simonis, Mosciski and Hammes',
     format: 'CD',
-    release_date: '30/09/1978',
+    releaseDate: '30/09/1978',
     price: 185,
     description:
       'id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper',
@@ -511,7 +511,7 @@ export const data = [
     img: 'http://dummyimage.com/145x100.png/5fa2dd/ffffff',
     producer: 'Fay-Cummerata',
     format: '2LP',
-    release_date: '19/09/1981',
+    releaseDate: '19/09/1981',
     price: 76,
     description:
       'facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque',
@@ -523,7 +523,7 @@ export const data = [
     img: 'http://dummyimage.com/186x100.png/ff4444/ffffff',
     producer: 'Goyette Group',
     format: 'CD',
-    release_date: '16/01/1951',
+    releaseDate: '16/01/1951',
     price: 103,
     description:
       'felis ut at dolor quis odio consequat varius integer ac leo pellentesque',
@@ -535,7 +535,7 @@ export const data = [
     img: 'http://dummyimage.com/116x100.png/5fa2dd/ffffff',
     producer: 'Brekke-Davis',
     format: 'LP',
-    release_date: '30/09/1949',
+    releaseDate: '30/09/1949',
     price: 112,
     description:
       'lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in',
@@ -547,7 +547,7 @@ export const data = [
     img: 'http://dummyimage.com/220x100.png/ff4444/ffffff',
     producer: 'Turcotte LLC',
     format: 'CD',
-    release_date: '19/10/2020',
+    releaseDate: '19/10/2020',
     price: 51,
     description:
       'at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt eget tempus vel pede morbi porttitor lorem id ligula',
@@ -559,7 +559,7 @@ export const data = [
     img: 'http://dummyimage.com/223x100.png/dddddd/000000',
     producer: 'Kirlin and Sons',
     format: 'CD',
-    release_date: '27/11/1959',
+    releaseDate: '27/11/1959',
     price: 161,
     description:
       'nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum',
@@ -571,7 +571,7 @@ export const data = [
     img: 'http://dummyimage.com/199x100.png/dddddd/000000',
     producer: 'Goodwin-Hackett',
     format: 'CD',
-    release_date: '13/02/2008',
+    releaseDate: '13/02/2008',
     price: 57,
     description:
       'habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt',
@@ -583,7 +583,7 @@ export const data = [
     img: 'http://dummyimage.com/245x100.png/dddddd/000000',
     producer: 'Veum LLC',
     format: '2LP',
-    release_date: '17/09/1994',
+    releaseDate: '17/09/1994',
     price: 168,
     description:
       'vel est donec odio justo sollicitudin ut suscipit a feugiat et eros',
@@ -595,7 +595,7 @@ export const data = [
     img: 'http://dummyimage.com/151x100.png/dddddd/000000',
     producer: 'Jerde Group',
     format: '2LP',
-    release_date: '06/08/2005',
+    releaseDate: '06/08/2005',
     price: 175,
     description:
       'vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae',
