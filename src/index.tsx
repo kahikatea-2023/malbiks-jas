@@ -2,17 +2,19 @@ import { Elysia, t } from 'elysia'
 import { html } from '@elysiajs/html'
 import * as elements from 'typed-html'
 import { db } from './db'
-import { Todo, albums } from './db/schema'
-import { eq } from 'drizzle-orm'
+import { Album, albums } from './db/schema'
+import { eq, like } from 'drizzle-orm'
 import Header from './Components/Header'
 import Nav from './Components/Nav'
 import MainContent from './Components/MainContent'
 import Content from './Components/Content'
+import NewReleases from './Components/NewReleases'
+import SearchPage from './Components/SearchPage'
 
 const app = new Elysia()
   .use(html())
   .get('/', async ({ html }) => {
-    const data = await db.select().from(albums).all()
+    const data: Album[] = await db.select().from(albums).all()
     return html(
       <BaseHtml>
         <div>
@@ -24,9 +26,23 @@ const app = new Elysia()
       </BaseHtml>
     )
   })
-  // .get('/todos', async () => {
-  //   const data = await db.select().from(todos).all()
-  //   return <div class="flex  w-full "></div>
+  // .get('/search', ({ query, html }) => {
+  //   const searchQuery = query.q
+  //   const searchResult = db
+  //     .select()
+  //     .from(albums)
+  //     .where(like(albums.title, `%${searchQuery}%`))
+  //     .all()
+  //   return html(
+  //     <BaseHtml>
+  //       <div>
+  //         <body class="bg-malbik-gray">
+  //           <Header />
+  //           <SearchPage />
+  //         </body>
+  //       </div>
+  //     </BaseHtml>
+  //   )
   // })
   // .post(
   //   '/todos/toggle/:id',
