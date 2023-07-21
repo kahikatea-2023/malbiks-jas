@@ -2,12 +2,14 @@ import { Elysia, t } from 'elysia'
 import { html } from '@elysiajs/html'
 import * as elements from 'typed-html'
 import { db } from './db'
-import { Todo, albums } from './db/schema'
-import { eq } from 'drizzle-orm'
+import { albums } from './db/schema'
+import { desc, eq } from 'drizzle-orm'
 import Header from './Components/Header'
 import Nav from './Components/Nav'
 import MainContent from './Components/MainContent'
 import Content from './Components/Content'
+import NewReleasesList from './Components/NewReleasesList'
+import SearchPage from './Components/SearchPage'
 
 const app = new Elysia()
   .use(html())
@@ -18,11 +20,26 @@ const app = new Elysia()
         <div>
           <body class="bg-malbik-gray">
             <Header />
-            <Content albums={data} />
+            <Content page="home" albums={data}/>
           </body>
         </div>
       </BaseHtml>
     )
+  })
+  // .get('/newestReleases', async () => {
+  //   const newestAlbums = (await db
+  //     .select()
+  //     .from(albums)
+  //     // .orderBy(desc(albums.releaseDate))
+  //     // .limit(14))
+  //   console.log(newestAlbums)
+  //   return <NewReleasesList albums={newestAlbums} />
+  // })
+  .get('/search', async () => {
+    const data = await db.select().from(albums).all()
+    return <div>
+      <Content page="search" albums={data}/>
+    </div>
   })
   // .get('/todos', async () => {
   //   const data = await db.select().from(todos).all()
