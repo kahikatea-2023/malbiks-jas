@@ -2,44 +2,86 @@ import { Elysia, t } from 'elysia'
 import { html } from '@elysiajs/html'
 import * as elements from 'typed-html'
 import { db } from './db'
-import { albums } from './db/schema'
-import { desc, eq } from 'drizzle-orm'
+import { Album, albums } from './db/schema'
+import { desc, eq, like } from 'drizzle-orm'
 import Header from './Components/Header'
 import Nav from './Components/Nav'
 import MainContent from './Components/MainContent'
 import Content from './Components/Content'
 import NewReleasesList from './Components/NewReleasesList'
 import SearchPage from './Components/SearchPage'
+import { log } from 'console'
 
 const app = new Elysia()
   .use(html())
   .get('/', async ({ html }) => {
-    const data = await db.select().from(albums).all()
+    const data = await db
+      .select()
+      .from(albums)
+      .orderBy(desc(albums.releaseDate))
+      .limit(14)
+      .all()
+
     return html(
       <BaseHtml>
         <div>
           <body class="bg-malbik-gray">
             <Header />
-            <Content page="home" albums={data}/>
+            <MainContent data={data} />
           </body>
         </div>
       </BaseHtml>
     )
   })
   // .get('/newestReleases', async () => {
-  //   const newestAlbums = (await db
+  //   const newestAlbums = await db
   //     .select()
   //     .from(albums)
-  //     // .orderBy(desc(albums.releaseDate))
-  //     // .limit(14))
-  //   console.log(newestAlbums)
+  //
+
   //   return <NewReleasesList albums={newestAlbums} />
   // })
-  .get('/search', async () => {
-    const data = await db.select().from(albums).all()
-    return <div>
-      <Content page="search" albums={data}/>
-    </div>
+  .get('/search', async ({ query }) => {
+    const searchQuery = query.q as Record<string, unknown>
+    const sortQuery = query.sort
+    let data = [] as Album[]
+
+    data = await db
+      .select()
+      .from(albums)
+      .where(like(albums.title || albums.artist, `%${searchQuery}%`))
+      .all()
+    
+    switch (sortQuery) {
+      case 'artist':
+        data = await db
+          .select()
+          .from(albums)
+          .where(like(albums.title || albums.artist, `%${searchQuery}%`))
+          .orderBy(albums.artist)
+          .all()
+        break
+        case 'title':
+          data = await db
+          .select()
+          .from(albums)
+          .where(like(albums.title || albums.artist, `%${searchQuery}%`))
+          .orderBy(albums.title)
+          .all()
+      default:
+        break
+    }
+
+    return (
+      <BaseHtml>
+        <div>
+          <body class="bg-malbik-gray">
+            <Header/>
+            <SearchPage query={query.q} results={data} />
+          </body>
+        </div>
+      </BaseHtml>
+    )
   })
   // .get('/todos', async () => {
   //   const data = await db.select().from(todos).all()
@@ -64,29 +106,6 @@ const app = new Elysia()
   //   {
   //     params: t.Object({
   //       id: t.Numeric(),
-  //     }),
-  //   }
-  // )
-  // .delete(
-  //   '/todos/:id',
-  //   async ({ params }) => {
-  //     await db.delete(todos).where(eq(todos.id, params.id)).run()
-  //   },
-  //   {
-  //     params: t.Object({
-  //       id: t.Numeric(),
-  //     }),
-  //   }
-  // )
-  // .post(
-  //   '/todos',
-  //   async ({ body }) => {
-  //     const newTodo = await db.insert(todos).values(body).returning().get()
-  //     return <TodoItem {...newTodo} />
-  //   },
-  //   {
-  //     body: t.Object({
-  //       content: t.String({ minLength: 1 }),
   //     }),
   //   }
   // )

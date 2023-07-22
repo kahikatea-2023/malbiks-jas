@@ -14,7 +14,7 @@ function Header() {
             alt="Malbiks logo"
           />
         </a>
-        <NavText text={navText} />
+        {/* <NavText text={navText} /> */}
       </div>
       <Nav />
     </header>

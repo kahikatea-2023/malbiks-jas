@@ -11,10 +11,7 @@ interface Props {
 
 function Content({albums, page}: Props ) {
   return (
-    <div class="bg-white flex mx-20">
-      <SideBar />
-      {page === "home" ? <MainContent /> : <SearchPage results={albums}/>}
-    </div>
+    <div></div>
   )
 }
 
