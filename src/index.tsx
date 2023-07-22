@@ -76,7 +76,7 @@ const app = new Elysia()
       <BaseHtml>
         <div>
           <body class="bg-malbik-gray">
-            <Header/>
+            
             <SearchPage query={query.q} results={data} />
           </body>
         </div>
