@@ -8,7 +8,7 @@ export const albums = sqliteTable('albums', {
   img: text('img').notNull(),
   producer: text('producer').notNull(),
   format: text('format').notNull(),
-  releaseDate: text('release_date').notNull(),
+  releaseDate: integer('release_date').notNull(),
   price: integer('price').notNull(),
   description: text('description').notNull(),
   availability: text('availability').notNull(),
