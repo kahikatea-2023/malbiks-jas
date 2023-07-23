@@ -1,5 +1,9 @@
 # THE BETH STACK
 
+## What is this?
+
+The focus of this was to learn the technologies of the BETH stack in a short span of time with a set of specific goals in mind in a small team. We started on Thursday evening and finished Saturday at 3pm. Our shared goal was to use a website as a reference with a specific focus on the functionality. We focussed on the pulling of data from the Turso database with drizzle as our database requestor from the frontend. The frontend was made with TSX compenents and information was altered and requested and via HTMX calls through Elysia. The functionality we aimed for was the search, sorting and filtering, with a stretch for handling pagination. In this time we did well to get the search and sorting working (if a bit janky) and almost had filtering implemented. A super fun challenge.
+
 _It may not be the BEST stack, but it is the BETH stack._
 
 ## [Bun](https://bun.sh/)
