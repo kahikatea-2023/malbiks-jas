@@ -42,7 +42,9 @@ _really you can use whatever you like the most_
 
 5. Run `bun run db:push` to push the database schema to your database
 
-6. Run `bun run dev` to start the dev server
+6. Run `bun run db:seed` to seed the database
+
+7. Run `bun run dev` to start the dev server
 
 # TO DEPLOY TO FLY
 
